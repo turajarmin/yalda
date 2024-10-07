@@ -1,0 +1,69 @@
+.popular-brands {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 230px;
+  .popular-brands-center {
+    width: 98%;
+    height: inherit;
+    border: 1px solid #e0e0e2;
+    border-radius: 16px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    .popular-brands-center-top {
+      width: 100%;
+      h2 {
+        font-family: var(--fontIranYekan);
+        font-size: 21px;
+        font-weight: normal;
+        text-align: center;
+        color: #0c0c0c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-left: 7px;
+        }
+      }
+    }
+    .popular-brands-center-bottom {
+      width: 100%;
+      margin-top: 25px;
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        touch-action: pan-y;
+        a {
+          width: 142px;
+          height: 118px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 4px 16px 4px 16px;
+          border-right: 1px solid #f0f0f1;
+          img {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

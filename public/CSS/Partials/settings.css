@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 4000px;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: #f0f0f1;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+  width: 9px;
+  background-color: #c0c2c5;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.headphone {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 2;
+  right: 35px;
+  bottom: 35px;
+  background-color: #ef4056;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supermarket {
+  width: 125px;
+  height: 50px;
+  background-color: #029a49;
+  position: fixed;
+  z-index: 2;
+  left: 20px;
+  bottom: 35px;
+  border-radius: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  p {
+    font-family: var(--fontIranYekan);
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@font-face {
+  font-family: IranYekan;
+src: url(../../../Fonts/IRANYekanWeb.eot);
+src: url(../../../Fonts/IRANYekanWeb.ttf);
+src: url(../../../Fonts/IRANYekanWeb.woff);
+src: url(../../../Fonts/IRANYekanWeb.woff2);
+}
+:root {
+  --fontIranYekan: IranYekan;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 10px !important;
+  color: #8b8e93;
+  font-weight: bold;
+}
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  transition: 300ms;
+}
+.swiper-pagination-bullet-active {
+  width: 20px !important;
+  border-radius: 5px !important;
+  background-color: white !important;
+}
+.no-left-border {
+  border-left: unset !important;
+}
+.middle-border-left {
+  border-left: 1px solid #e0e0e2;
+}
+.middle-border-bottom {
+  border-bottom: 1px solid #e0e0e2;
+}
+.border-hottest-offers {
+  width: 210px;
+  border-bottom: 1px solid #f0f0f1;
+  margin-top: 12px;
+}
+.border-bestselling {
+  width: 210px;
+  border-bottom: 1px solid #f0f0f1;
+  margin-top: 12px;
+}
+.no-bottom-border {
+  border-bottom: unset !important;
+}
+.menu {
+  width: fit-content;
+  height: inherit;
+  position: relative;
+  .menu-items {
+    font-size: 13.5px !important;
+    font-weight: bold !important;
+    color: #3f4064 !important;
+    transition: 100ms;
+    img {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+  .submenu {
+    width: 80vw;
+    height: 72vh;
+    background-color: white;
+    box-shadow: 0 0 20px lightgray;
+    display: none;
+    position: absolute;
+    z-index: 3;
+    .submenu-items {
+      width: 20%;
+      height: 100%;
+      overflow: auto;
+      direction: ltr;
+      .submenu-items-right {
+        width: 100%;
+        height: 50px;
+        background-color: #f5f5f5;
+        .submenu-items-right-link {
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          width: 98%;
+          height: 100%;
+          text-decoration: none;
+          color: #3f4064;
+          font-size: 13px;
+          font-family: var(--fontIranYekan);
+          text-align: right;
+          line-height: 40px;
+          transition: 300ms;
+          img {
+            width: 18px;
+            height: 18px;
+            margin-left: 10px;
+          }
+          &:hover {
+            color: #ef394e;
+            background-color: white;
+          }
+        }
+        .submenu-item-right-submenu {
+          position: absolute;
+          width: 80%;
+          height: 72vh;
+          left: 0;
+          top: 0;
+          background-color: white;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          display: none;
+          overflow-y: scroll;
+          .all-products {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: right;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            .all-products-link {
+              text-decoration: none;
+              color: #008eb2;
+              font-family: var(--fontIranYekan);
+              font-size: 12px;
+              font-weight: bold;
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+          div {
+            width: 24%;
+            a {
+              display: flex;
+              justify-content: right;
+              align-items: center;
+              width: 200px;
+              height: 30px;
+              text-decoration: none;
+              color: #0c0c0c;
+              font-size: 13.5px;
+              font-weight: bold;
+              font-family: var(--fontIranYekan);
+              margin: 5px 10px 10px 0;
+              &:hover {
+                color: #ef394e;
+              }
+              img {
+                width: 16px;
+                height: 16px;
+              }
+              span {
+                height: 16px;
+                border: 1px solid #ef4056;
+                margin-left: 8px;
+              }
+            }
+            .each-item {
+              font-family: var(--fontIranYekan);
+              color: #81858b;
+              font-size: 12.5px;
+              font-weight: normal;
+              text-align: right;
+              margin-top: unset;
+              margin-bottom: unset;
+              margin-bottom: 3px;
+              &:hover {
+                color: #ef394e;
+              }
+            }
+          }
+        }
+        &:hover .submenu-item-right-submenu {
+          display: flex;
+        }
+      }
+    }
+  }
+  &:hover .submenu {
+    display: block;
+  }
+}
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #f0f0f1;
+}
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background-color: #c0c2c5;
+}
+.active {
+  display: flex !important;
+}

@@ -1,0 +1,189 @@
+.amazing {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  .amazing-center {
+    width: 98%;
+    height: inherit;
+    background-image: linear-gradient(225deg, #d22c4e, #ee384e 41.68%, #ef5662);
+    padding: 20px 0;
+    border-radius: 15px;
+    .swiper {
+      width: 98%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        width: inherit;
+        height: inherit;
+        flex-flow: column wrap;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        img {
+          width: 132px;
+          height: 132px;
+        }
+        p {
+          font-family: var(--fontIranYekan);
+          font-size: 12.5px;
+          color: #62666d;
+          line-height: 20px;
+          width: 80%;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-align: right;
+        }
+        .swiper-slide-price {
+          width: 100%;
+          display: flex;
+          flex-flow: row wrap;
+          direction: ltr;
+          justify-content: space-between;
+          padding-right: 5px;
+          span {
+            display: flex;
+            font-size: 14px;
+            font-family: var(--fontIranYekan);
+            font-weight: bold;
+            color: #3f4064;
+            column-gap: 4px;
+            align-items: center;
+            padding-left: 10px;
+            .toman {
+              width: 20px;
+              height: 20px;
+            }
+          }
+          .swiper-slide-price-discount {
+            display: block;
+            width: 35px;
+            height: 20px;
+            background: #d32f2f;
+            font-size: 12px;
+            color: #fff;
+            border-radius: 11px;
+            padding: unset;
+            padding-top: 2px;
+            font-weight: normal;
+          }
+        }
+        .swiper-slide-delete {
+          display: block;
+          width: 100%;
+          text-decoration: line-through;
+          text-align: left;
+          padding-left: 35px;
+          color: #c0c2c5;
+          font-family: var(--fontIranYekan);
+          font-size: 12px;
+        }
+      }
+      .last {
+        width: 150px;
+        height: 255px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          width: 100px;
+          height: 95px;
+
+          .rounded {
+            width: 52px;
+            height: 52px;
+            border: 2px solid #19bfd3;
+            border-radius: 50%;
+            img {
+              width: 45px;
+              height: 45px;
+              margin-top: 7px;
+              padding-left: 7px;
+            }
+          }
+          p {
+            color: #3f4064;
+            font-size: 14px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+    .activeAmazing {
+      background-color: transparent !important;
+      a {
+        display: flex;
+        text-decoration: none;
+        flex-flow: column wrap;
+        width: inherit;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        .swiper-slide-image-1 {
+          width: 88px;
+          height: 88px;
+        }
+        .swiper-slide-image-2 {
+          width: 80px;
+          height: 80px;
+        }
+        .swiper-slide-clock {
+          display: flex;
+          direction: ltr;
+          width: 100%;
+          justify-content: center;
+          column-gap: 2px;
+          div {
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 25px;
+            color: #23254e;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: var(--fontIranYekan);
+          }
+          span {
+            color: white;
+            font-weight: bold;
+          }
+        }
+        .see-all {
+          font-family: var(--fontIranYekan);
+          font-size: 12px;
+          color: white;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

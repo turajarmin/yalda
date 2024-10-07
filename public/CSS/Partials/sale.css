@@ -1,0 +1,103 @@
+.sale {
+  width: 100%;
+  height: 815px;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  .sale-center {
+    width: 98%;
+    height: inherit;
+    border: 1px solid #e0e0e2;
+    border-radius: 16px;
+    .sale-center-top {
+      width: 100%;
+      height: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-family: var(--fontIranYekan);
+        font-size: 21px;
+        font-weight: normal;
+        color: #0c0c0c;
+        margin-right: 8px;
+      }
+    }
+    .sale-center-bottom {
+      width: 100%;
+      height: 735px;
+      margin-top: 10px;
+      .sale-center-bottom-items {
+        width: inherit;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        a {
+          width: 225px;
+          height: 250px;
+          border-bottom: 1px solid #f0f0f1;
+          border-left: 1px solid #f0f0f1;
+          padding: 12px 8px 12px 8px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          text-decoration: none;
+          img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+          }
+          .new-price {
+            width: 200px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            .left {
+              width: 120px;
+              height: inherit;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              p {
+                font-family: var(--fontIranYekan);
+                color: #3f4064;
+                font-weight: bold;
+              }
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .right {
+              width: 34px;
+              height: 20px;
+              border-radius: 16px;
+              background-color: #d32f2f;
+              margin-right: 5px;
+              text-align: center;
+              span {
+                font-family: var(--fontIranYekan);
+                font-size: 12px;
+                color: white;
+              }
+            }
+          }
+          .old-price {
+            width: 200px;
+            height: 30px;
+            text-align: left;
+            p {
+              font-family: var(--fontIranYekan);
+              color: #c0c2c5;
+              font-size: 12.5px;
+              text-decoration: line-through;
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

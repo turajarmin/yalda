@@ -1,0 +1,335 @@
+.heading {
+  width: 100%;
+  height: 65px;
+  margin-top: 175px;
+  background-image: url(../../Images/Incredible-Offers/heading.svg),
+    linear-gradient(to top, #ef4056, #ef394e);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+}
+.under-heading {
+  width: 100%;
+  height: 400px;
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.daily-amazing {
+  width: 100%;
+  height: 360px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .daily-amazing-center {
+    width: 98%;
+    height: inherit;
+    background-image: url(../../Images/Incredible-Offers/pattern.svg),
+      linear-gradient(180deg, #e6123d, #c60c31);
+    border-radius: 10px;
+    .daily-amazing-heading {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      margin-top: 20px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+      p {
+        font-family: var(--fontIranYekan);
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        margin-right: 10px;
+      }
+    }
+    .swiper {
+      width: 99%;
+      height: 270px;
+      margin-top: 30px;
+      padding-right: 15px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      border-radius: 8px;
+      padding: 10px 15px 10px 15px;
+      a {
+        width: 525px;
+        height: 250px;
+        text-decoration: none;
+        .slide-heading {
+          width: 100%;
+          height: 20px;
+          img {
+            width: 125px;
+            height: 15px;
+          }
+        }
+        .slide-content {
+          width: 100%;
+          height: 220px;
+          display: flex;
+          justify-content: space-between;
+          .slide-content-right {
+            width: 200px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              width: 200px;
+              height: 200px;
+            }
+          }
+          .slide-content-left {
+            font-family: var(--fontIranYekan);
+            color: #3f4064;
+            margin-top: 45px;
+            .explanation {
+              width: 295px;
+              height: 50px;
+              p {
+                font-size: 12px;
+                text-align: right;
+                font-weight: bold;
+                line-height: 22px;
+              }
+            }
+            .rating {
+              width: 290px;
+              height: 30px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .color {
+                width: 80px;
+                height: 15px;
+                display: flex;
+                .round {
+                  width: 14px;
+                  height: 14px;
+                  background-color: black;
+                  border: 1px solid black;
+                  border-radius: 50%;
+                }
+                p {
+                  font-size: 10px;
+                  padding-right: 7px;
+                }
+              }
+              .measure {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 14px;
+                  height: 14px;
+                  margin-left: 6px;
+                }
+                p {
+                  font-size: 11px;
+                  font-family: var(--fontIranYekan);
+                }
+              }
+              .rating-number {
+                width: 42px;
+                height: 15px;
+                display: flex;
+                p {
+                  font-size: 12px;
+                  padding-left: 6px;
+                  font-weight: bold;
+                }
+                img {
+                  width: 16px;
+                  height: 16px;
+                }
+              }
+            }
+            .price {
+              width: 290px;
+              height: 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .discount {
+                width: 34px;
+                height: 20px;
+                background-color: #d32f2f;
+                border: 1px solid #d32f2f;
+                border-radius: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                span {
+                  font-family: var(--fontIranYekan);
+                  font-size: 11.5px;
+                  font-weight: bold;
+                  color: white;
+                }
+              }
+              .new-price {
+                width: 115px;
+                height: inherit;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                font-family: var(--fontIranYekan);
+                font-size: 16px;
+                font-weight: bold;
+                color: #3f4064;
+                margin-left: 3px;
+                img {
+                  width: 17px;
+                  height: 17px;
+                  margin-right: 3px;
+                }
+              }
+            }
+            .old-price {
+              width: 100%;
+              height: 22px;
+              text-align: left;
+              margin-bottom: 6px;
+              span {
+                font-family: var(--fontIranYekan);
+                font-size: 12px;
+                text-decoration: line-through;
+                color: #c0c2c5;
+                margin-left: 25px;
+              }
+            }
+            .sold-out-under {
+              width: 98%;
+              height: 4px;
+              border: 1px solid #f0f0f1;
+              background-color: #f0f0f1;
+              border-radius: 9999px;
+              position: relative;
+              .sold-out-on {
+                width: 88%;
+                height: inherit;
+                border: 1px solid #ef394e;
+                background-color: #ef394e;
+                border-radius: 9999px;
+                position: absolute;
+                left: -2px;
+                top: -1px;
+              }
+            }
+            .bottom {
+              width: 100%;
+              height: 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-family: var(--fontIranYekan);
+              .bottom-right {
+                width: 85px;
+                height: inherit;
+                display: flex;
+                align-items: center;
+                span {
+                  color: #ef394e;
+                  margin-left: 4px;
+                  font-size: 11px;
+                }
+                p {
+                  color: #81858b;
+                  font-size: 11px;
+                }
+              }
+              .bottom-left {
+                width: 90px;
+                height: inherit;
+                text-align: left;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                span {
+                  font-size: 12px;
+                  color: #ef394e;
+                  padding-left: 5px;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+}
+.sold-out-on-two {
+  width: 38%;
+  height: inherit;
+  border: 1px solid #ef394e;
+  background-color: #ef394e;
+  border-radius: 9999px;
+  position: absolute;
+  left: -2px;
+  top: -1px;
+}
+.last {
+  width: inherit;
+  height: inherit;
+  .lock {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    .lock-content {
+      width: 85px;
+      height: 85px;
+      border: 1px solid #ef4056;
+      border-radius: 50%;
+      background-color: #ef4056;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+  }
+  p {
+    font-family: var(--fontIranYekan);
+    font-size: 14px;
+    color: #3f4064;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+}
+.round-gray {
+  width: 14px;
+  height: 14px;
+  background-color: grey;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.round-blue {
+  width: 14px;
+  height: 14px;
+  background-color: rgb(33, 150, 243);
+  border: 1px solid rgb(33, 150, 243);
+  border-radius: 50%;
+}

@@ -1,0 +1,26 @@
+.dos {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  .dos-center {
+    display: flex;
+    width: 98%;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    .dos-center-left,
+    .dos-center-right {
+      width: 660px;
+      height: 265px;
+      img {
+        width: 655px;
+        height: 265px;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+  }
+}
